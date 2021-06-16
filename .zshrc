@@ -100,3 +100,4 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+export APP=emacs
