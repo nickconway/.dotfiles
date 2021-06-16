@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux screen npm themes zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git ssh-agent tmux screen npm themes zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,4 +100,3 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
-eval $(ssh-agent)
