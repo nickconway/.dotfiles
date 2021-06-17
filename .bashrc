@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 PATH=$PATH:/home/nick/.local/bin
+
+zsh
