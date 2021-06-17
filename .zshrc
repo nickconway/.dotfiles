@@ -103,3 +103,7 @@ export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}
 
 export VISUAL=emacs
 export EDITOR="$VISUAL"
+
+alias ys="yadm status"
+alias yau="yadm add -u"
+alias yc="yadm commit"
