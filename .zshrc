@@ -108,5 +108,6 @@ alias ys="yadm status"
 alias yau="yadm add -u"
 alias yc="yadm commit"
 alias yp="yadm push"
+alias yl="yadm pull"
 
 yadm pull
