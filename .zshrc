@@ -113,4 +113,12 @@ alias yca="yadm commit -a"
 alias ycam="yadm commit -a -m"
 alias yp="yadm push"
 alias yl="yadm pull"
+
+finish(){
+    yadm commit -a -m "update config"
+    yadm push
+}
+
 yadm pull
+
+trap finish EXIT

@@ -76,3 +76,11 @@
 (after! evil
   (setq evil-ex-substitute-global t
         evil-move-cursor-back nil))
+
+(after! tramp
+  (setenv "SHELL" "/bin/bash"))
+
+(setq which-key-idle-delay 0.5
+      which-key-allow-multiple-replacements t)
+
+(setq yas-triggers-in-field t)
