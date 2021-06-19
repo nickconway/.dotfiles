@@ -109,7 +109,8 @@ export EDITOR="$VISUAL"
 alias ys="yadm status"
 alias yau="yadm add -u"
 alias yc="yadm commit"
+alias yca="yadm commit -a"
+alias ycam="yadm commit -a -m"
 alias yp="yadm push"
 alias yl="yadm pull"
-
 yadm pull
