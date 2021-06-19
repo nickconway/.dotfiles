@@ -65,3 +65,10 @@
 
 
 (setq org-hide-emphasis-markers t)
+
+(setq display-line-numbers-type 'relative)
+
+;; Colemak for avy
+(after! avy
+  ;; home row priorities: 8 6 4 5 - - 1 2 3 7
+  (setq avy-keys '(?n ?e ?i ?s ?t ?r ?o ?a)))
