@@ -84,5 +84,5 @@
 
 (setq yas-triggers-in-field t)
 
-(add-to-list 'load-path "~/.config/emacs/elisp/")
-(require 'kbd-mode)
+(use-package kbd-mode
+  :load-path "~/.config/emacs/elisp/")
