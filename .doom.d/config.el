@@ -83,3 +83,6 @@
       which-key-allow-multiple-replacements t)
 
 (setq yas-triggers-in-field t)
+
+(add-to-list 'load-path "~/.config/emacs/elisp/")
+(require 'kbd-mode)
