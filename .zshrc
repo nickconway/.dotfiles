@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode ssh-agent gpg-agent keychain tmux screen npm themes zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git vi-mode gpg-agent keychain tmux screen npm themes zsh-autosuggestions zsh-syntax-highlighting)
 zstyle :omz:plugins:keychain agents gpg,ssh
 zstyle :omz:plugins:keychain identities gh
 
@@ -106,7 +106,7 @@ PATH="$HOME/.local/bin:$PATH"
 
 eval "$(starship init zsh)"
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
-
+export NO_AT_BRIDGE=1
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
