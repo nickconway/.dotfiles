@@ -70,10 +70,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode tmux screen npm themes zsh-autosuggestions zsh-syntax-highlighting)
-
-keychain ~/.ssh/gh
-source ~/.keychain/$HOST-sh
+plugins=(git vi-mode ssh-agent gpg-agent keychain tmux screen npm themes zsh-autosuggestions zsh-syntax-highlighting)
+zstyle :omz:plugins:keychain agents gpg,ssh
+zstyle :omz:plugins:keychain identities gh
 
 source $ZSH/oh-my-zsh.sh
 
