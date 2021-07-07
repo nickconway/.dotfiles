@@ -77,6 +77,8 @@ source ~/.keychain/$HOST-sh
 
 source $ZSH/oh-my-zsh.sh
 
+PATH="$HOME/.local/bin:$PATH"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
