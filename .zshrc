@@ -73,6 +73,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git vi-mode gpg-agent keychain tmux screen npm themes zsh-autosuggestions zsh-syntax-highlighting)
 zstyle :omz:plugins:keychain agents gpg,ssh
 zstyle :omz:plugins:keychain identities gh
+zstyle :omz:plugins:keychain options -q
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,11 +112,10 @@ export VISUAL=emacs
 export EDITOR="$VISUAL"
 
 alias ys="yadm status"
+alias ya="yadm add"
 alias yau="yadm add -u"
 alias yc="yadm commit"
 alias yca="yadm commit -a"
 alias ycam="yadm commit -a -m"
 alias yp="yadm push"
 alias yl="yadm pull"
-
-yadm pull
